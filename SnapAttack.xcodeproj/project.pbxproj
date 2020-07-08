@@ -13,6 +13,8 @@
 		182DADD324B66424001BBF10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182DADD124B66424001BBF10 /* Main.storyboard */; };
 		182DADD524B66428001BBF10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 182DADD424B66428001BBF10 /* Assets.xcassets */; };
 		182DADD824B66428001BBF10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182DADD624B66428001BBF10 /* LaunchScreen.storyboard */; };
+		182DADE124B66471001BBF10 /* Cheveuxdange.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 182DADDF24B66470001BBF10 /* Cheveuxdange.ttf */; };
+		182DADE224B66471001BBF10 /* DK Cinnabar Brush.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 182DADE024B66471001BBF10 /* DK Cinnabar Brush.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		182DADD424B66428001BBF10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		182DADD724B66428001BBF10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		182DADD924B66428001BBF10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182DADDF24B66470001BBF10 /* Cheveuxdange.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cheveuxdange.ttf; sourceTree = "<group>"; };
+		182DADE024B66471001BBF10 /* DK Cinnabar Brush.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DK Cinnabar Brush.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				182DADCD24B66424001BBF10 /* SceneDelegate.swift */,
 				182DADCF24B66424001BBF10 /* ViewController.swift */,
 				182DADD124B66424001BBF10 /* Main.storyboard */,
+				182DADDF24B66470001BBF10 /* Cheveuxdange.ttf */,
+				182DADE024B66471001BBF10 /* DK Cinnabar Brush.ttf */,
 				182DADD424B66428001BBF10 /* Assets.xcassets */,
 				182DADD624B66428001BBF10 /* LaunchScreen.storyboard */,
 				182DADD924B66428001BBF10 /* Info.plist */,
@@ -125,9 +131,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182DADE224B66471001BBF10 /* DK Cinnabar Brush.ttf in Resources */,
 				182DADD824B66428001BBF10 /* LaunchScreen.storyboard in Resources */,
 				182DADD524B66428001BBF10 /* Assets.xcassets in Resources */,
 				182DADD324B66424001BBF10 /* Main.storyboard in Resources */,
+				182DADE124B66471001BBF10 /* Cheveuxdange.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +295,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 268W7E23V8;
 				INFOPLIST_FILE = SnapAttack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +314,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 268W7E23V8;
 				INFOPLIST_FILE = SnapAttack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
