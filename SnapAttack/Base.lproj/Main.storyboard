@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Cheveuxdange.ttf">
+            <string>Cheveuxdange</string>
+        </array>
         <array key="DK Cinnabar Brush.ttf">
             <string>DKCinnabarBrush</string>
         </array>
@@ -17,26 +20,81 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SnapAttack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Table" translatesAutoresizingMaskIntoConstraints="NO" id="FZO-y2-gqf">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Table" translatesAutoresizingMaskIntoConstraints="NO" id="FZO-y2-gqf">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Snap Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hlf-5v-e4v">
-                                <rect key="frame" x="54" y="61" width="305" height="174"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="DKCinnabarBrush" family="DK Cinnabar Brush" pointSize="40"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snap Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Hlf-5v-e4v">
+                                <rect key="frame" x="54" y="17" width="211" height="0.0"/>
+                                <fontDescription key="fontDescription" name="DKCinnabarBrush" family="DK Cinnabar Brush" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: 20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ldl-7m-F32">
+                                <rect key="frame" x="34" y="34" width="104" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="sgP-qa-f5a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cheveuxdange" family="Cheveuxdange" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qas-t8-66v">
+                                <rect key="frame" x="182" y="34" width="104" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="8ZW-dU-8K5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cheveuxdange" family="Cheveuxdange" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue_cover" translatesAutoresizingMaskIntoConstraints="NO" id="1fh-gA-gGw">
+                                <rect key="frame" x="34" y="142" width="104" height="179"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="223" id="l86-a6-Uaa"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue_cover" translatesAutoresizingMaskIntoConstraints="NO" id="Hpb-59-Ne5">
+                                <rect key="frame" x="182" y="142" width="104" height="179"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="223" id="Bpn-Zz-Z1o"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sm0-1V-SLp">
+                                <rect key="frame" x="0.0" y="480" width="320" height="0.0"/>
+                                <fontDescription key="fontDescription" name="DKCinnabarBrush" family="DK Cinnabar Brush" pointSize="50"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="FZO-y2-gqf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Fh2-va-Aqt"/>
-                            <constraint firstItem="FZO-y2-gqf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HQf-br-1B1"/>
-                            <constraint firstAttribute="bottom" secondItem="FZO-y2-gqf" secondAttribute="bottom" id="LCk-jH-Tg2"/>
-                            <constraint firstItem="FZO-y2-gqf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tR1-x5-Td1"/>
+                            <constraint firstItem="1fh-gA-gGw" firstAttribute="top" secondItem="Ldl-7m-F32" secondAttribute="bottom" constant="53" id="5rf-yg-wWO"/>
+                            <constraint firstItem="Ldl-7m-F32" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="7sp-Mc-nLZ"/>
+                            <constraint firstItem="Sm0-1V-SLp" firstAttribute="height" secondItem="Hlf-5v-e4v" secondAttribute="height" id="BPJ-mG-RSZ"/>
+                            <constraint firstItem="Sm0-1V-SLp" firstAttribute="top" secondItem="Hpb-59-Ne5" secondAttribute="bottom" constant="159" id="Ed8-Xg-S3W"/>
+                            <constraint firstItem="Hpb-59-Ne5" firstAttribute="leading" secondItem="1fh-gA-gGw" secondAttribute="trailing" constant="44" id="FoB-Nl-Wur"/>
+                            <constraint firstItem="Ldl-7m-F32" firstAttribute="top" secondItem="Hlf-5v-e4v" secondAttribute="bottom" constant="17" id="N2U-77-YX6"/>
+                            <constraint firstItem="Hlf-5v-e4v" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="17" id="Oro-8w-Xfr"/>
+                            <constraint firstItem="qas-t8-66v" firstAttribute="top" secondItem="Hlf-5v-e4v" secondAttribute="bottom" constant="17" id="Owa-A7-5pk"/>
+                            <constraint firstItem="qas-t8-66v" firstAttribute="leading" secondItem="Ldl-7m-F32" secondAttribute="trailing" constant="44" id="PgD-ll-an4"/>
+                            <constraint firstItem="Hpb-59-Ne5" firstAttribute="top" secondItem="qas-t8-66v" secondAttribute="bottom" constant="53" id="Rj5-gi-xkT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qas-t8-66v" secondAttribute="trailing" constant="34" id="U2Y-ib-2Fl"/>
+                            <constraint firstItem="Sm0-1V-SLp" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="UYp-v0-K8w"/>
+                            <constraint firstItem="Sm0-1V-SLp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VUj-Wc-ITj"/>
+                            <constraint firstItem="1fh-gA-gGw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="aii-pq-qfJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hpb-59-Ne5" secondAttribute="trailing" constant="34" id="gnB-H5-7gQ"/>
+                            <constraint firstItem="Sm0-1V-SLp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gxq-x5-8gY"/>
+                            <constraint firstItem="Hlf-5v-e4v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="kdg-Vd-QCl"/>
+                            <constraint firstItem="1fh-gA-gGw" firstAttribute="width" secondItem="Ldl-7m-F32" secondAttribute="width" id="lSx-oX-38d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hlf-5v-e4v" secondAttribute="trailing" constant="55" id="nRM-09-8JX"/>
+                            <constraint firstItem="Hpb-59-Ne5" firstAttribute="width" secondItem="Ldl-7m-F32" secondAttribute="width" id="nkX-uQ-Jsk"/>
+                            <constraint firstItem="Sm0-1V-SLp" firstAttribute="top" secondItem="1fh-gA-gGw" secondAttribute="bottom" constant="159" id="oxZ-0B-Fjm"/>
+                            <constraint firstItem="qas-t8-66v" firstAttribute="width" secondItem="Ldl-7m-F32" secondAttribute="width" id="sL4-0V-xHh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -48,5 +106,6 @@
     </scenes>
     <resources>
         <image name="Table" width="1980" height="1200"/>
+        <image name="blue_cover" width="500" height="726"/>
     </resources>
 </document>
