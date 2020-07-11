@@ -9,12 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var firstCard: UIImageView!
+    @IBOutlet weak var secondCard: UIImageView!
+    
+    @IBOutlet weak var startGameButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func startGameButtonWasPressed(_ sender: Any) {
+    }
+    
 }
 

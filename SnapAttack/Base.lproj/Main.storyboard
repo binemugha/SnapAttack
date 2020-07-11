@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -20,7 +20,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SnapAttack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Table" translatesAutoresizingMaskIntoConstraints="NO" id="FZO-y2-gqf">
@@ -28,13 +28,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snap Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Hlf-5v-e4v">
-                                <rect key="frame" x="54" y="17" width="211" height="0.0"/>
+                                <rect key="frame" x="54" y="61" width="305" height="147"/>
                                 <fontDescription key="fontDescription" name="DKCinnabarBrush" family="DK Cinnabar Brush" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: 20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ldl-7m-F32">
-                                <rect key="frame" x="34" y="34" width="104" height="55"/>
+                                <rect key="frame" x="34" y="225" width="151" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="sgP-qa-f5a"/>
                                 </constraints>
@@ -43,7 +43,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qas-t8-66v">
-                                <rect key="frame" x="182" y="34" width="104" height="55"/>
+                                <rect key="frame" x="229" y="225" width="151" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="8ZW-dU-8K5"/>
                                 </constraints>
@@ -52,23 +52,26 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue_cover" translatesAutoresizingMaskIntoConstraints="NO" id="1fh-gA-gGw">
-                                <rect key="frame" x="34" y="142" width="104" height="179"/>
+                                <rect key="frame" x="34" y="333" width="151" height="223"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="223" id="l86-a6-Uaa"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue_cover" translatesAutoresizingMaskIntoConstraints="NO" id="Hpb-59-Ne5">
-                                <rect key="frame" x="182" y="142" width="104" height="179"/>
+                                <rect key="frame" x="229" y="333" width="151" height="223"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="223" id="Bpn-Zz-Z1o"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sm0-1V-SLp">
-                                <rect key="frame" x="0.0" y="480" width="320" height="0.0"/>
+                                <rect key="frame" x="0.0" y="715" width="414" height="147"/>
                                 <fontDescription key="fontDescription" name="DKCinnabarBrush" family="DK Cinnabar Brush" pointSize="50"/>
                                 <state key="normal" title="START">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="startGameButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="On8-5Q-JoO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -98,10 +101,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="firstCard" destination="1fh-gA-gGw" id="Uvx-zz-eIo"/>
+                        <outlet property="scoreLabel" destination="qas-t8-66v" id="zVm-io-LCO"/>
+                        <outlet property="secondCard" destination="Hpb-59-Ne5" id="rYd-nh-DfS"/>
+                        <outlet property="startGameButton" destination="Sm0-1V-SLp" id="qYQ-8c-3Bx"/>
+                        <outlet property="timeLabel" destination="Ldl-7m-F32" id="Loj-mD-5q4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
+            <point key="canvasLocation" x="136.80000000000001" y="99.400299850074973"/>
         </scene>
     </scenes>
     <resources>
