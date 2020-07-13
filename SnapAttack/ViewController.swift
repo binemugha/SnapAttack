@@ -29,9 +29,19 @@ class ViewController: UIViewController {
 
     @IBAction func startGameButtonWasPressed(_ sender: Any) {
         print("Button Pressed")
-        firstCard.image = UIImage(named: "2_of_diamonds")
-        secondCard.image = UIImage(named: "5_of_clubs")
+        
+        if timerInt == 20{
+            timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+        }
     }
     
+    @objc func updateTimer() {
+        timerInt -= 1
+        timeLabel.text = String("Time: \(timerInt)")
+        
+        if timerInt == 0 {
+            timer.invalidate()
+        }
+    }
 }
 
