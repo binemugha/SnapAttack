@@ -32,6 +32,7 @@ class ViewController: UIViewController {
         
         if timerInt == 20{
             timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+            cardTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCards), userInfo: nil, repeats: true)
         }
     }
     
@@ -50,6 +51,9 @@ class ViewController: UIViewController {
         
         let random1 = Int(arc4random_uniform(UInt32(cardList.count)))
         firstCard.image = UIImage(named: cardList[random1])
+        
+        let random2 = Int(arc4random_uniform(UInt32(cardList.count)))
+        secondCard.image = UIImage(named: cardList[random2])
     }
 }
 
