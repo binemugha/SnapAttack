@@ -43,5 +43,13 @@ class ViewController: UIViewController {
             timer.invalidate()
         }
     }
+    
+    @objc func updateCards() {
+        
+        let cardList = ["ace_of_hearts","2_of_hearts","3_of_hearts","4_of_hearts","5_of_hearts","6_of_hearts","7_of_hearts","8_of_hearts","9_of_hearts","10_of_hearts"]
+        
+        let random1 = Int(arc4random_uniform(UInt32(cardList.count)))
+        firstCard.image = UIImage(named: cardList[random1])
+    }
 }
 
