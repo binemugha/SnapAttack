@@ -28,11 +28,36 @@ class ViewController: UIViewController {
     }
 
     @IBAction func startGameButtonWasPressed(_ sender: Any) {
-        print("Button Pressed")
         
         if timerInt == 20{
             timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
             cardTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCards), userInfo: nil, repeats: true)
+            
+            startGameButton.isEnabled = false
+            startGameButton.alpha = 0.25
+            startGameButton.setTitle("Snap", for: UIControl.State.normal)
+        }
+        
+        if gameMode == 1{
+            if firstCard.image == secondCard.image {
+                scoreInt += 1
+                scoreLabel.text = String("Socre: \(scoreInt)")
+            }else{
+                scoreInt -= 1
+                scoreLabel.text = String("Socre: \(scoreInt)")
+            }
+        }
+        
+        if timerInt == 0 {
+            scoreInt = 0
+            timerInt = 20
+            
+            scoreLabel.text = String("Socre: \(scoreInt)")
+            timeLabel.text = String("Time: \(timerInt)")
+            
+            startGameButton.setTitle("Start", for: UIControl.State.normal)
+            firstCard.image = UIImage(named: "blue_cover")
+            secondCard.image = UIImage(named: "blue_cover")
         }
     }
     
@@ -40,8 +65,16 @@ class ViewController: UIViewController {
         timerInt -= 1
         timeLabel.text = String("Time: \(timerInt)")
         
+        gameMode = 1
+        startGameButton.isEnabled = true
+        startGameButton.alpha = 1
+        
         if timerInt == 0 {
             timer.invalidate()
+            cardTimer.invalidate()
+            gameMode = 0
+            
+            startGameButton.setTitle("Restart", for: UIControl.State.normal)
         }
     }
     
